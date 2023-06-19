@@ -1,0 +1,18 @@
+# unset text for everything (remove text=auto basically)
+*	                        text=false
+*.bat                       text eol=crlf
+*.sh                        text eol=lf
+*.rs                        text
+*.toml                      text
+*.md                        text
+LICENSE                     text
+justfile                    text
+.gitignore                  text
+.gitattributes              text
+*.yml                       text
+.dockerignore               text
+.editorconfig               text
+Dockerfile                  text
+.gitkeep                    text
+CHANGELOG                   text
+afl-fuzz/in-dummy/*         text

@@ -1,0 +1,29 @@
+[package]
+name = "{{project-name}}"
+version = "0.0.0"
+authors = ["{{authors}}"]
+edition = "2021"
+description = "{{project-description}}"
+readme = "README.md"
+repository = "{{project-url}}"
+keywords = [""]
+categories = [""]
+license = "{{license}}"
+
+[[bin]]
+name = "{{project-name}}"
+
+[dev-dependencies]
+rusty-hook = { version = "0.11"}
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = 'fat'
+strip = "symbols"
+
+[profile.dev]
+opt-level = 0
+debug = true
