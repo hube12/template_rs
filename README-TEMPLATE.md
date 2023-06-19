@@ -1,6 +1,4 @@
-# {{project-name}} 
-
-Generate it with `cargo generate https://github.com/hube12/template_rs`
+# {{project-name}}
 
 ## Tooling
 
@@ -44,5 +42,7 @@ Once done, you should enter the folder `afl-fuzz` or `fuzz` and run the script `
 
 ## License
 
-<!-- TODO: insert license-->
+{{license}} LICENSE
+
+Copyright (c) {{ "now" | date: "%Y" }} {{authors}}
 
